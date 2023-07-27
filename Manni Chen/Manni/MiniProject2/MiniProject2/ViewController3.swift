@@ -9,6 +9,7 @@ import UIKit
 
 class ViewController3: UIViewController {
 
+    @IBOutlet weak var displayAnswer: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,8 +17,18 @@ class ViewController3: UIViewController {
     }
     
 
+    @IBAction func response1(_ sender: Any) {
+        displayAnswer.text = "✅"
+    }
+    @IBAction func response2(_ sender: Any) {
+        displayAnswer.text = "❌"
+    }
+    @IBAction func response3(_ sender: Any) {
+        displayAnswer.text = "❌"
+    }
     /*
-    // MARK: - Navigation
+   
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
